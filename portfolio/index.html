@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2><span>Port</span>folio</h2>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1> HEY, I'M<span><br>RACHANA </span>TRIPATHI</h1>
+                <p> A frontend focused web Develeper building the frontend of websites that leads to the success of the product </p>
+            </div>
+        </div>
+
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about col-1">
+                    <img src="rt.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Greetins ,I'm recent Computer Science graduate passionate about Web Developer with a solid
+                        foundation in HTML,CSS,JavaScript, TailwindCSS, Python honed through internshi projects, I'm
+                        eager to apply my knowing a professional settings. I'm exicted to contribute my skills to make a
+                        meaningful impact</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li>HTML<br></li>
+                            <li>CSS<br></li>
+                            <li>TailwindCSS<br></li>
+                            <li>JavaScript<br></li>
+                            <li>Python<br></li>
+                            <li>SQL<br></li>
+
+                        </ul>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2024</span><br>B.Tech from B.N.College OF Engineering And Technology,Lucknow
+                                </li>
+
+                                <li><span>2021</span><br>Diploma from Govt.Girls Polytechnic College,Gorakhpur</li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <br>
+                                <li>Fresher</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title"> My Services</h1>
+            <div class="Service-list">
+                <div>
+                    <h2>Web Develeper</h2>
+                    <p>Specialize in creating website that work perfectly for your business whether it's making them look good or ensuring they run smoothly.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Front-end Develpment</h2>
+                    <p>Expert front-end Develpment servicesto enhance your digital presence and user Experience</p>
+                    <a href="#">Learn more</a>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="ecommer.jpg">
+                    <div class="layer">
+                        <h3> E-COMMERCE WEBSITE</h3>
+                        <p>An e-commerce website is one that allows people to buy and sell physical goods, services, and
+                            digital products over the internet</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="fb.jpg">
+                    <div class="layer">
+                        <h3>FACEBOOK CLONE </h3>
+                        <p>An e-commerce website is one that allows people to buy and sell physical goods, services, and
+                            digital products over the internet</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="apas.jpg">
+                    <div class="layer">
+                        <h3>E-FARMING</h3>
+                        <p>An e-commerce website is one that allows people to buy and sell physical goods, services, and
+                            digital products over the internet</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me </h1>
+                    <p><i class="fa-solid fa-envelope"></i>tripathirachna37@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9336293474</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Rachna cv.pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="YourName" required>
+                        <input type="email" name="Email" placeholder=" Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+                    </form>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active.link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active.tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+</body>
+
+</html>
